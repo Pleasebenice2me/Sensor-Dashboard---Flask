@@ -16,7 +16,7 @@ def dashboard():
         "nh3": None,
         "temperature": None
     }
-    return render_template('dashboard.html', data=latest_data)
+    return render_template('index.html', data=latest_data)
 
 @app.route('/update', methods=['POST'])
 def update_data():
